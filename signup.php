@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,8 +21,10 @@
             <input type="password" placeholder="Enter Password" name="psw" required maxlength="20">
               
             <button type="submit">Sign up</button>
+            <p>Already have an account? <a href="login.php">Log in</a></p>
+            <button><a href="index.php">Back</a></button>
           </div>
-          <p>Already have an account? <a href="login.php">Log in</a></p>
+
     </div>
 
 
