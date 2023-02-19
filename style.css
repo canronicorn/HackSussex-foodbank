@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+}
+
+
+
+
+.longDivider {
+    flex-grow: 1;
+    border-top: 10px solid #98B9AB;
+    border-radius: 20px;
+    margin: 0px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+#login {
+    background-color: #a4d1be;
+    border: 2px solid #a4d1be;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    display: block;
+    margin: auto;
+    transition-duration: 1s;
+    margin-bottom: 150px;
+    font-family: 'Raleway', serif;
+}
+
+#login a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+#login:hover {
+    background-color: #bddecf;
+    border: #bddecf;
+    box-shadow: 5px 8px #666666;
+}
+
+#login a:hover {
+    color: white;
+}
+
+
+.websiteNameBar {
+    background: linear-gradient(90deg, rgba(189, 222, 207, 1) 0%, rgba(155, 201, 149, 1) 49%, rgba(81, 113, 165, 1) 81%);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    color: #bddecf;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+
+
+.intro {
+    text-align: center;
+    font-family: 'Raleway', serif;
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #98B9AB;
+    font-size: 40px;
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #98B9AB;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+#slideInText {
+    visibility: hidden;
+}
+
+#slideInText.slideIn {
+    visibility: visible;
+    animation-name: slideIn;
+    animation-duration: 3s;
+
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.colour-block {
+    background: #98B9AB;
+    width: 60%;
+    padding: 7% 20% 3% 20%;
+    color: #fff;
+}
+
+.white-block {
+    background: #fff;
+    width: 60%;
+    padding: 7% 20% 3% 20%;
+    color: #98B9AB;
+}
+
+.are-you h1 {
+    text-align: center;
+    font-size: 80px;
+    font-family: 'wire one', serif;
+    font-weight: normal;
+}
+
+.are-you p {
+    font-size: 20px;
+    font-family: 'Raleway', serif;
+}
+
+
+/*------------------*/
+/*  SKEW CLOCKWISE  */
+/*------------------*/
+.skew-cc {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    left: 0px;
+    background: linear-gradient(to right bottom, #98B9AB 49%, #fff 50%), linear-gradient(-50deg, #ffffff 16px, #000 0);
+}
+
+
+/*-------------------------*/
+/* SKEW COUNTER CLOCKWISE  */
+/*-------------------------*/
+.skew-c {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    left: 0px;
+    background: linear-gradient(to left bottom, #fff 49%, #98B9AB 50%);
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48;
+    font-size: 60px;
+}
+
+/* hello there */
+table,
+th,
+td {
+    border: 3px solid black;
+}
+.features{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.features h1{
+    margin-top: 60px;
+    font-size: 80px;
+    font-family: 'wire one', serif;
+    font-weight: normal;
+}
+
+.features ul{
+    list-style-type: square;
+    font-size: 25px;
+    display: inline-block;
+    font-family: 'Raleway', serif;
+}
+/* login page */
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+#loginpage{
+    background:linear-gradient(90deg, rgba(189, 222, 207, 1) 0%, rgba(155, 201, 149, 1) 49%, rgba(81, 113, 165, 1) 81%);
+    ;
+}
+
+
+.loginbox{
+    text-align: center;
+    font-family: 'Raleway', serif;
+    background-color: rgba(255, 255, 255, 0.6);;
+    border-radius: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-top: 80px;
+    margin-left: 300px;
+    margin-right: 300px;
+    height: 350px;
+}
+.loginbox h1{
+    font-family: 'wire one', serif;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.loginbox a{
+    color: #000;
+
+}

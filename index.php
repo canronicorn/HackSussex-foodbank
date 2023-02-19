@@ -1,3 +1,55 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Wire+One|Raleway:300' rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script type="text/javascript" src="slideIn.js"></script>
+    <title>Home Page</title>
+</head>
+<body>
 
-echo "testing changing World!";
+
+<div class="websiteNameBar"><h1>Website Name</h1></div>
+<p class="longDivider"></p>
+<div class="intro">
+<span>We create around <div class="hover-underline-animation">9.5 million tonnes</div> of food waste per year in the U.K</span>
+<p id="slideInText">... and 8.4 million people in the UK are in food poverty.</p>
+
+
+</div>
+<button id="login"><a href="login.html">Log In</a></button>
+
+<div class="are-you">
+    <h1>Are you...</h1>
+    <div class="skew-c"></div>
+    <div class="colour-block">
+      <h1>Seeking food <i class="material-symbols-outlined">nutrition</i></h1>
+      <p>Order what you need the most of in a quick and easy way.</p>
+    </div>
+    <div class="skew-cc"></div>
+    <div class="white-block">
+      <h1>Donating food <i class="material-symbols-outlined">volunteer_activism</i></h1>
+      <p>See what foodbanks are requesting, including the current availability of stock in order to donate to it.</p>
+    </div>
+    <div class="skew-c"></div>
+    <div class="colour-block">
+      <h1>A Foodbank <i class="material-symbols-outlined">food_bank</i></h1>
+      <p>Need somewhere to display current stock to those who need foodbanks and those who want to be able to donate but never know what to give? This website provides all of those things.</p>
+    </div>
+    </div>
+    <div class="features">
+    <h1>Website features</h1>
+    <ul>
+        <li>See current availability of food.</li>
+        <li>Request the food you need.</li>
+        <li>Donate the spare food you have.</li>
+    </ul>
+  </div>
+</html>
