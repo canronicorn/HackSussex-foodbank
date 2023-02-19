@@ -31,9 +31,12 @@
 </body>
 
 <script>
-function send_login_request(username, password) {
-    var result = "<?php login($username, $password); ?>"
+function send_login_request() {
+    var username = document.getElementsByName('uname')[0].value;
+    var password = document.getElementsByName('psw')[0].value;
+    var result = "<?php login('" + username + "', '" + password + "'); ?>";
 }
+
 </script>
 
 </html>
