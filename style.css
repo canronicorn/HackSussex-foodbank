@@ -252,5 +252,30 @@ input[type=text], input[type=password] {
 }
 .loginbox a{
     color: #000;
+}
+.loginbox button{
+    background-color: #a4d1be;
+    border: 2px solid #a4d1be;
+    font-size: 20px;
+    width: 100px;
+    height: 50px;
+    display: block;
+    margin: auto;
+    transition-duration: 1s;
 
+    font-family: 'Raleway', serif;
+}
+.loginbox button a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.loginbox button:hover {
+    background-color: #9fb7ac;
+    border: #bddecf;
+}
+
+.loginbox button a:hover {
+    color: white;
 }
