@@ -20,7 +20,7 @@
             <label for="psw"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="psw" required maxlength="20">
               
-            <button type="submit">Login</button>
+            <button type="submit"><a href="test.php">Login</a></button>
           </div>
           <p>Don't have an account? <a href="signup.php">Sign up</a></p>
           <button><a href="index.php">Back</a></button>
