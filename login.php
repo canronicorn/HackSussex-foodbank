@@ -38,6 +38,7 @@ function send_login_request() {
     console.log(usernamee)
     console.log(password)
     var result = "<?php login('" + username + "', '" + password + "'); ?>";
+    return false;
 }
 
 </script>
