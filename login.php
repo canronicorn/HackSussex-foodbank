@@ -33,8 +33,10 @@
 <script>
 function send_login_request() {
   alert("Work");
-    var username = document.getElementsByName('uname')[0].value;
-    var password = document.getElementsByName('psw')[0].value;
+    // var username = document.getElementsByName('uname')[0].value;
+    var username = "smith1023";
+    // var password = document.getElementsByName('psw')[0].value;
+    var password ="smithPassword";
     console.log(usernamee)
     console.log(password)
     var result = "<?php login('" + username + "', '" + password + "'); ?>";
