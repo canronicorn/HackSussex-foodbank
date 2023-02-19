@@ -57,7 +57,7 @@ function login($username, $password) {
         $userId = $data['document']['userInfo'][0]['_id'];
         echo "user id is $userId\n";
         $userInfo = grabUserInfo($userId);
-        if ($userInfo['document']['foodbank'] == true) {
+        if ($userInfo['document']['foodbank'] == 1) {
           echo "Food bank login\n";
           echo $userInfo['document']['foodBankName'] . "\n";
           grabinventoryItems($userId);
