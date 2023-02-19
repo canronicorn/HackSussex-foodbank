@@ -99,8 +99,9 @@
 
 <script>
 
-document.querySelector("#loginBtn").addEventListener("click", e =>
+document.querySelector("#loginForm").addEventListener("submit", e =>
 {
+    e.preventDefault();
     alert("Work");
     // var username = document.getElementsByName('uname')[0].value;
     var username = "smith1023";
@@ -118,15 +119,15 @@ document.querySelector("#loginBtn").addEventListener("click", e =>
 <body id="loginpage">
     <div class="loginbox">
         <h1>Login</h1>
-        <div class="container">
+        <form id="loginForm" class="container">
             <label for="uname"><b>Username</b></label>
             <input type="text" placeholder="Enter Username" name="uname" required maxlength="20">
 
             <label for="psw"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="psw" required maxlength="20">
 
-            <button id="loginBtn" type="submit">Login</button>
-        </div>
+            <button type="submit">Login</button>
+        </form>
         <p>Don't have an account? <a href="signup.php">Sign up</a></p>
         <button><a href="index.php">Back</a></button>
     </div>
