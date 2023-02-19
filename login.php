@@ -32,6 +32,7 @@
 
 <script>
 function send_login_request() {
+  alert("Work");
     var username = document.getElementsByName('uname')[0].value;
     var password = document.getElementsByName('psw')[0].value;
     console.log(usernamee)
