@@ -67,13 +67,12 @@ function send_login_request(username, password, foodbank) {
 function addNewUser($username, $password, $foodbank) {
   $url = 'https://eu-west-2.aws.data.mongodb-api.com/app/data-wugsm/endpoint/data/v1/action/create';
   $data = array(
-    'collection' => 'userInfo',
+    'collection' => 'Login',
     'database' => 'Hack',
     'dataSource' => 'hacksussexDB',
     'document' => array(
       'username' => $username,
       'password' => $password,
-      'foodbank' => $foodbank
     )
   );
   $headers = array(
