@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<?php
+    include_once 'test2.php';
+?>
 
 <!DOCTYPE html>
 <html>
