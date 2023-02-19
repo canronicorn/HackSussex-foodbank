@@ -44,7 +44,7 @@ function grabinventoryItems($userId) {
     'Access-Control-Request-Headers: *',
     'api-key: KrXM0dT8X5oZLZRqvKu69knfpZzF4ouo9WDug2HxpAHJ5Z7eoNSVJCVsCpkWXYz9'
   );
-  
+
   $options = array(
     'http' => array(
       'header' => $headers,
@@ -62,32 +62,11 @@ function grabinventoryItems($userId) {
   }
   print_r($count);
 }
-function login($username, $password) {
-    try {
-      $data = createPostRequest('Login', 'Hack', 'hacksussexDB', ['username' => $username, 'password' => $password]);
-      if ($data['document'] == null) {
-        echo "\033[31mIncorrect user login username and/or password\033[0m\n";
-        return;
-      } else {
-        $userId = $data['document']['userInfo'][0]['_id'];
-        echo "user id is $userId\n";
-        $userInfo = grabUserInfo($userId);
-        if ($userInfo['document']['foodbank'] == true) {
-          echo "Food bank login\n";
-          echo $userInfo['document']['foodBankName'] . "\n";
-          grabinventoryItems($userId);
-        }
-      }
-    } catch (Exception $error) {
-      echo "\033[31mWe have an error in login\033[0m\n";
-      echo "\033[31m" . $error->getMessage() . "\033[0m\n";
-    }
-  }
+
   function main() {
     $username = "SammyUser";
     $password = "myPassword1234";
     login($username, $password);
   }
-  
+
   main();
-  

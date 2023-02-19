@@ -16,17 +16,55 @@
         <div class="container">
             <label for="uname"><b>Username</b></label>
             <input type="text" placeholder="Enter Username" name="uname" required maxlength="20">
-      
+
             <label for="psw"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="psw" required maxlength="20">
-              
-            <button type="submit"><a href="test.php">Login</a></button>
+
+            <button onclick="" type="submit"><a>Login</a></button>
           </div>
           <p>Don't have an account? <a href="signup.php">Sign up</a></p>
           <button><a href="index.php">Back</a></button>
     </div>
 
 
-    
+
 </body>
 </html>
+
+<?php
+  function runMyFunction() {
+    echo 'I just ran a php function';
+  }
+
+  if (isset($_GET['hello'])) {
+    runMyFunction();
+  }
+?>
+
+Hello there!
+<a href='index.php?hello=true'>Run PHP Function</a>
+</html>
+
+
+<?php
+function login($username, $password) {
+    try {
+      $data = createPostRequest('Login', 'Hack', 'hacksussexDB', ['username' => $username, 'password' => $password]);
+      if ($data['document'] == null) {
+        echo "\033[31mIncorrect user login username and/or password\033[0m\n";
+        return;
+      } else {
+        $userId = $data['document']['userInfo'][0]['_id'];
+        echo "user id is $userId\n";
+        $userInfo = grabUserInfo($userId);
+        if ($userInfo['document']['foodbank'] == true) {
+          echo "Food bank login\n";
+          echo $userInfo['document']['foodBankName'] . "\n";
+          grabinventoryItems($userId);
+        }
+      }
+    } catch (Exception $error) {
+      echo "\033[31mWe have an error in login\033[0m\n";
+      echo "\033[31m" . $error->getMessage() . "\033[0m\n";
+    }
+  }
