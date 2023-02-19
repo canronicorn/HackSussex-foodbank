@@ -1,32 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href='https://fonts.googleapis.com/css?family=Wire+One|Raleway:300' rel="stylesheet">
-    <title>Log In</title>
-
-<script>
-function sendLoginRequest() {
-  alert("Work");
-    // var username = document.getElementsByName('uname')[0].value;
-    var username = "smith1023";
-    // var password = document.getElementsByName('psw')[0].value;
-    var password ="smithPassword";
-    console.log(usernamee)
-    console.log(password)
-    var result = "<?php login('" + username + "', '" + password + "'); ?>";
-    return false;
-}
-
-</script>
-
-
-
 <?php
 function login($username, $password) {
     try {
@@ -112,6 +83,36 @@ function login($username, $password) {
     print_r($count);
   }
   ?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://fonts.googleapis.com/css?family=Wire+One|Raleway:300' rel="stylesheet">
+    <title>Log In</title>
+
+<script>
+function sendLoginRequest() {
+  alert("Work");
+    // var username = document.getElementsByName('uname')[0].value;
+    var username = "smith1023";
+    // var password = document.getElementsByName('psw')[0].value;
+    var password ="smithPassword";
+    console.log(usernamee)
+    console.log(password)
+    var result = "<?php login('" + username + "', '" + password + "'); ?>";
+    return false;
+}
+
+</script>
+
+
 </head>
 <body id="loginpage">
     <div class="loginbox">
