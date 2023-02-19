@@ -21,9 +21,6 @@
             <input type="password" placeholder="Enter Password" name="psw" required maxlength="20">
 
             <button type="submit">Login</button>
-            <label>
-              <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
           </div>
           <p>Don't have an account? <a href="signup.php">Sign up</a></p>
     </div>
