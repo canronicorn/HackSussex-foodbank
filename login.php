@@ -39,7 +39,6 @@ function login($username, $password) {
         echo "user id is $userId\n";
         $userInfo = grabUserInfo($userId);
         if ($userInfo['document']['foodbank'] == 1) {
-          echo "Food bank login\n";
           echo $userInfo['document']['foodBankName'] . "\n";
           grabinventoryItems($userId);
         }
@@ -63,7 +62,7 @@ function login($username, $password) {
       'Access-Control-Request-Headers: *',
       'api-key: KrXM0dT8X5oZLZRqvKu69knfpZzF4ouo9WDug2HxpAHJ5Z7eoNSVJCVsCpkWXYz9'
     );
-  
+
     $options = array(
       'http' => array(
         'header' => $headers,
@@ -75,12 +74,12 @@ function login($username, $password) {
     $response = file_get_contents($url, false, $context);
     return json_decode($response, true);
   }
-  
+
   function grabUserInfo($userId) {
     $data = createPostRequest('userInfo', 'Hack', 'hacksussexDB', array('_id' => array('$oid' => $userId)));
     return $data;
   }
-  
+
   function grabinventoryItems($userId) {
     $url = 'https://eu-west-2.aws.data.mongodb-api.com/app/data-wugsm/endpoint/data/v1/action/find';
     $data = array(
@@ -94,7 +93,7 @@ function login($username, $password) {
       'Access-Control-Request-Headers: *',
       'api-key: KrXM0dT8X5oZLZRqvKu69knfpZzF4ouo9WDug2HxpAHJ5Z7eoNSVJCVsCpkWXYz9'
     );
-  
+
     $options = array(
       'http' => array(
         'header' => $headers,
