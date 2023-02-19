@@ -6,11 +6,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script type="text/javascript" src="script.js"></script>
     <title></title>
 </head>
 <body>
 
-
+<table>
+    <tr>
+        <th>GFG UserHandle</th>
+        <th>Practice Problems</th>
+        <th>Coding Score</th>
+        <th>GFG Articles</th>
+    </tr>
+</table>
 
 </body>
 </html>
