@@ -98,17 +98,15 @@
     <title>Log In</title>
 
 <script>
-    function sendLoginRequest() {
-        alert("Work");
-        // var username = document.getElementsByName('uname')[0].value;
-        var username = "smith1023";
-        // var password = document.getElementsByName('psw')[0].value;
-        var password ="smithPassword";
-        console.log(usernamee)
-        console.log(password)
-        var result = "<?php login('" + username + "', '" + password + "'); ?>";
-        return false;
-    }
+function sendLoginRequest() {
+    alert("Work");
+    // var username = document.getElementsByName('uname')[0].value;
+    var username = "smith1023";
+    // var password = document.getElementsByName('psw')[0].value;
+    var password ="smithPassword";
+    console.log(usernamee)
+    console.log(password)
+}
 </script>
 
 
@@ -124,14 +122,10 @@
             <input type="password" placeholder="Enter Password" name="psw" required maxlength="20">
 
             <button onclick="sendLoginRequest()" type="submit">Login</button>
-          </div>
-          <p>Don't have an account? <a href="signup.php">Sign up</a></p>
-          <button><a href="index.php">Back</a></button>
+        </div>
+        <p>Don't have an account? <a href="signup.php">Sign up</a></p>
+        <button><a href="index.php">Back</a></button>
     </div>
-
-
-
 </body>
-
 
 </html>
