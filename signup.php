@@ -28,7 +28,7 @@
               <label>
                 <input type="checkbox" name="afoodbank"> I'm a foodbank
               </label>
-            <button type="submit">Sign up</button>
+              <button onclick="send_login_request('uname','psw', getSelectedCheckboxValue())" type="submit">Sign up</button>
             <p>Already have an account? <a href="login.php">Log in</a></p>
 
             <button><a href="index.php">Back</a></button>
@@ -37,6 +37,31 @@
     </div>
     
 </body>
+<script>
+function getSelectedCheckboxValue() {
+  var checkboxes = document.querySelectorAll('input[type=checkbox]:checked');
+  var values = [];
+  checkboxes.forEach(function(checkbox) {
+    switch(checkbox.name) {
+      case "seekingfood":
+        values.push(0);
+        break;
+      case "donatingfood":
+        values.push(2);
+        break;
+      case "afoodbank":
+        values.push(1);
+        break;
+    }
+  });
+  return values;
+}
+
+function send_login_request(username, password, foodbank) {
+  var result = "<?php addNewUser($username, $password, $foodbank); ?>"
+}
+</script>
+
 </html>
 <?php
 function addNewUser($username, $password, $foodbank) {
