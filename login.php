@@ -9,28 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href='https://fonts.googleapis.com/css?family=Wire+One|Raleway:300' rel="stylesheet">
     <title>Log In</title>
-</head>
-<body id="loginpage">
-    <div class="loginbox">
-        <h1>Login</h1>
-        <div class="container">
-            <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required maxlength="20">
-
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required maxlength="20">
-
-            <button onclick="sendLoginRequest()" type="submit">Login</button>
-          </div>
-          <p>Don't have an account? <a href="signup.php">Sign up</a></p>
-          <button><a href="index.php">Back</a></button>
-    </div>
-
-
-
-</body>
-
-<script>
+    <script>
 function sendLoginRequest() {
   alert("Work");
     // var username = document.getElementsByName('uname')[0].value;
@@ -133,3 +112,25 @@ function login($username, $password) {
     }
     print_r($count);
   }
+  ?>
+</head>
+<body id="loginpage">
+    <div class="loginbox">
+        <h1>Login</h1>
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required maxlength="20">
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required maxlength="20">
+
+            <button onclick="sendLoginRequest()" type="submit">Login</button>
+          </div>
+          <p>Don't have an account? <a href="signup.php">Sign up</a></p>
+          <button><a href="index.php">Back</a></button>
+    </div>
+
+
+
+</body>
+
