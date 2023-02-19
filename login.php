@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href='https://fonts.googleapis.com/css?family=Wire+One|Raleway:300' rel="stylesheet">
     <title>Log In</title>
-    <script>
+
+<script>
 function sendLoginRequest() {
   alert("Work");
     // var username = document.getElementsByName('uname')[0].value;
@@ -24,7 +25,6 @@ function sendLoginRequest() {
 
 </script>
 
-</html>
 
 
 <?php
@@ -133,3 +133,5 @@ function login($username, $password) {
 
 </body>
 
+
+</html>
