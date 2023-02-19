@@ -109,7 +109,6 @@ document.querySelector("#loginForm").addEventListener("submit", e =>
     var password ="smithPassword";
     console.log(usernamee)
     console.log(password)
-    var result = "<?php login('" + username + "', '" + password + "'); ?>";
 });
 
 </script>
