@@ -34,6 +34,8 @@
 function send_login_request() {
     var username = document.getElementsByName('uname')[0].value;
     var password = document.getElementsByName('psw')[0].value;
+    console.log(usernamee)
+    console.log(password)
     var result = "<?php login('" + username + "', '" + password + "'); ?>";
 }
 
