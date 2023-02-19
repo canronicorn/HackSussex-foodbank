@@ -97,22 +97,6 @@
     <link href='https://fonts.googleapis.com/css?family=Wire+One|Raleway:300' rel="stylesheet">
     <title>Log In</title>
 
-<script>
-
-document.querySelector("#loginForm").addEventListener("submit", e =>
-{
-    e.preventDefault();
-    alert("Work");
-    // var username = document.getElementsByName('uname')[0].value;
-    var username = "smith1023";
-    // var password = document.getElementsByName('psw')[0].value;
-    var password ="smithPassword";
-    console.log(usernamee)
-    console.log(password)
-});
-
-</script>
-
 
 </head>
 <body id="loginpage">
@@ -130,6 +114,22 @@ document.querySelector("#loginForm").addEventListener("submit", e =>
         <p>Don't have an account? <a href="signup.php">Sign up</a></p>
         <button><a href="index.php">Back</a></button>
     </div>
+
+    <script>
+
+    document.querySelector("#loginForm").addEventListener("submit", e =>
+    {
+        e.preventDefault();
+        alert("Work");
+        // var username = document.getElementsByName('uname')[0].value;
+        var username = "smith1023";
+        // var password = document.getElementsByName('psw')[0].value;
+        var password ="smithPassword";
+        console.log(usernamee)
+        console.log(password)
+    });
+
+</script>
 </body>
 
 </html>
