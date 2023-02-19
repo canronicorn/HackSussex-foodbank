@@ -20,7 +20,7 @@
             <label for="psw"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="psw" required maxlength="20">
 
-            <button onclick="" type="submit"><a>Login</a></button>
+            <button onclick="send_login_request('uname','psw')" type="submit">Login</button>
           </div>
           <p>Don't have an account? <a href="signup.php">Sign up</a></p>
           <button><a href="index.php">Back</a></button>
@@ -29,20 +29,13 @@
 
 
 </body>
-</html>
 
-<?php
-  function runMyFunction() {
-    echo 'I just ran a php function';
-  }
+<script>
+function send_login_request(username, password) {
+    var result = "<?php login($username, $password); ?>"
+}
+</script>
 
-  if (isset($_GET['hello'])) {
-    runMyFunction();
-  }
-?>
-
-Hello there!
-<a href='index.php?hello=true'>Run PHP Function</a>
 </html>
 
 
