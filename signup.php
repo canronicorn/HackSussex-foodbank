@@ -19,15 +19,22 @@
       
             <label for="psw"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="psw" required maxlength="20">
-              
+            <label>
+                <input type="checkbox" name="seekingfood"> I'm seeking food
+              </label>
+              <label>
+                <input type="checkbox" name="donatingfood"> I'm donating food
+              </label>
+              <label>
+                <input type="checkbox" name="afoodbank"> I'm a foodbank
+              </label>
             <button type="submit">Sign up</button>
             <p>Already have an account? <a href="login.php">Log in</a></p>
+
             <button><a href="index.php">Back</a></button>
           </div>
 
     </div>
-
-
     
 </body>
 </html>
