@@ -38,3 +38,33 @@
     
 </body>
 </html>
+<?php
+function addNewUser($username, $password, $foodbank) {
+  $url = 'https://eu-west-2.aws.data.mongodb-api.com/app/data-wugsm/endpoint/data/v1/action/create';
+  $data = array(
+    'collection' => 'userInfo',
+    'database' => 'Hack',
+    'dataSource' => 'hacksussexDB',
+    'document' => array(
+      'username' => $username,
+      'password' => $password,
+      'foodbank' => $foodbank
+    )
+  );
+  $headers = array(
+    'Content-Type: application/json',
+    'Access-Control-Request-Headers: *',
+    'api-key: KrXM0dT8X5oZLZRqvKu69knfpZzF4ouo9WDug2HxpAHJ5Z7eoNSVJCVsCpkWXYz9'
+  );
+
+  $options = array(
+    'http' => array(
+      'header' => $headers,
+      'method' => 'POST',
+      'content' => json_encode($data),
+    ),
+  );
+  $context  = stream_context_create($options);
+  $response = file_get_contents($url, false, $context);
+  return json_decode($response, true);
+}
