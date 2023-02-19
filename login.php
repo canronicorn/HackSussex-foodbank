@@ -20,7 +20,7 @@
             <label for="psw"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="psw" required maxlength="20">
 
-            <button onclick="send_login_request()" type="submit">Login</button>
+            <button onclick="sendLoginRequest()" type="submit">Login</button>
           </div>
           <p>Don't have an account? <a href="signup.php">Sign up</a></p>
           <button><a href="index.php">Back</a></button>
@@ -31,7 +31,7 @@
 </body>
 
 <script>
-function send_login_request() {
+function sendLoginRequest() {
   alert("Work");
     // var username = document.getElementsByName('uname')[0].value;
     var username = "smith1023";
