@@ -121,11 +121,11 @@
     {
         e.preventDefault();
         alert("Work");
-        // var username = document.getElementsByName('uname')[0].value;
-        var username = "smith1023";
-        // var password = document.getElementsByName('psw')[0].value;
-        var password ="smithPassword";
-        console.log(usernamee)
+        var username = document.getElementsByName('uname')[0].value;
+        // var username = "smith1023";
+        var password = document.getElementsByName('psw')[0].value;
+        // var password ="smithPassword";
+        console.log(username)
         console.log(password)
     });
 
